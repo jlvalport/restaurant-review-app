@@ -297,3 +297,39 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+@media screen and (min-width: 767px) {
+  body, td, th, p {
+    font-size: 1.3rem;
+  }
+  ul, li {
+    font-size: 1.3rem;
+  }
+
+  /* ====================== Restaurant Listing ====================== */
+  #restaurants-list {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  /* ====================== Restaurant Details ====================== */
+  .inside #map-container {
+    height: 56vh;
+  }
+  #restaurant-name {
+    font-size: 2.2rem;
+  }
+  #restaurant-img {
+    width: 70%;
+  }
+  #restaurant-cuisine {
+    width: 70%;
+  }
+  #restaurant-address {
+    font-size: 1.5rem;
+  }
+  #reviews-container h2 {
+    font-size: 2.4rem;
+  }
+}
