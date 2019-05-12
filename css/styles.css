@@ -56,6 +56,18 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   text-align: center;
   text-transform: uppercase;
 }
+.skip-link {
+  display: inline-block;
+  position: absolute;
+  z-index: 1000;
+  background: #01447e;
+  padding: 10px;
+  color: #fff;
+  left: -9999px;
+}
+.skip-link:focus {
+  left: 0;
+}
 
 /* ====================== Navigation ====================== */
 nav {
@@ -122,6 +134,10 @@ nav h1 a {
   background-color: #3397DB;
   align-items: center;
   padding: 10px 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(5, auto);
+  justify-items: center;
 }
 .filter-options h2 {
   color: white;
@@ -129,6 +145,12 @@ nav h1 a {
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
+}
+.filter-options label {
+  color: #fff;
+}
+.filter-options label:nth-of-type(1) {
+  margin: 10px 0 0 0;
 }
 .filter-options select {
   background-color: white;
@@ -354,5 +376,26 @@ nav h1 a {
 
   .r-box {
     justify-content: center;
+  }
+  #restaurant-cuisine {
+    margin: 0;
+  }
+
+  .filter-options {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+  .filter-options h2 {
+    grid-column: 2 / 4;
+  }
+  .filter-options label {
+    color: #fff;
+    justify-self: end;
+  }
+  .filter-options label:nth-of-type(1) {
+    grid-column: 1;
+  }
+  .filter-options select {
+    justify-self: start;
   }
 }
