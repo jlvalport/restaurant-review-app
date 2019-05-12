@@ -1,4 +1,4 @@
-let staticCacheName = 'rest-rev-cache-v1';
+let staticCacheName = 'rest-rev-cache-v4';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -11,16 +11,26 @@ self.addEventListener('install', (event) => {
         'data/restaurants.json',
         'css/styles.css',
         'restaurant.html',
-        'img/1.jpg',
-        'img/2.jpg',
-        'img/3.jpg',
-        'img/4.jpg',
-        'img/5.jpg',
-        'img/6.jpg',
-        'img/7.jpg',
-        'img/8.jpg',
-        'img/9.jpg',
-        'img/10.jpg',
+        'img/resized/1_1x.jpg',
+        'img/resized/1_2x.jpg',
+        'img/resized/2_1x.jpg',
+        'img/resized/2_2x.jpg',
+        'img/resized/3_1x.jpg',
+        'img/resized/3_2x.jpg',
+        'img/resized/4_1x.jpg',
+        'img/resized/4_2x.jpg',
+        'img/resized/5_1x.jpg',
+        'img/resized/5_2x.jpg',
+        'img/resized/6_1x.jpg',
+        'img/resized/6_2x.jpg',
+        'img/resized/7_1x.jpg',
+        'img/resized/7_2x.jpg',
+        'img/resized/8_1x.jpg',
+        'img/resized/8_2x.jpg',
+        'img/resized/9_1x.jpg',
+        'img/resized/9_2x.jpg',
+        'img/resized/10_1x.jpg',
+        'img/resized/10_2x.jpg',
       ]).catch(error => {
         console.log('Caches open failed: ' + error);
         
