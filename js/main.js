@@ -192,10 +192,13 @@ createRestaurantHTML = (restaurant) => {
   address.innerHTML = restaurant.address;
   li.append(address);
 
-  const more = document.createElement('a');
+  const more = document.createElement('button');
   more.innerHTML = 'View Details';
-  more.setAttribute('aria-labelledby', `r-i-${restaurant.id}`)
-  more.href = DBHelper.urlForRestaurant(restaurant);
+  more.setAttribute('aria-label', 'View details ' + restaurant.name);
+  more.onclick = function() {
+    const url = DBHelper.urlForRestaurant(restaurant);
+    window.location = url;
+  }
   li.append(more)
 
   return li
