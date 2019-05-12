@@ -59,7 +59,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 .skip-link {
   display: inline-block;
   position: absolute;
-  z-index: 1000;
+  z-index: 3000;
   background: #01447e;
   padding: 10px;
   color: #fff;
@@ -224,7 +224,7 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  position: fixed;
+  position: relative;
   top: 0;
   height: auto;
   width: 100%;
@@ -232,8 +232,8 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87vh;
-  margin: 130px 0 0 0;
+  height: 67vh;
+  margin: 0;
   width: 100%;
 }
 .inside #map {
@@ -369,11 +369,11 @@ nav h1 a {
 }
 
 @media screen and (min-width: 1023px) {
+  /* ====================== Restaurant Details ====================== */
   .restaurant-info-box {
     flex-direction: row;
     align-items: unset;
   }
-
   .r-box {
     justify-content: center;
   }
@@ -381,6 +381,7 @@ nav h1 a {
     margin: 0;
   }
 
+  /* ====================== Restaurant Filtering ====================== */
   .filter-options {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -394,6 +395,7 @@ nav h1 a {
   }
   .filter-options label:nth-of-type(1) {
     grid-column: 1;
+    margin: 0;
   }
   .filter-options select {
     justify-self: start;
