@@ -181,7 +181,7 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 10px 0;
   width: 94%;
-  max-width: 330px;
+  max-width: 350px;
   padding: 25px 30px;
   text-align: left;
   border-radius: 28px 0;
@@ -191,11 +191,10 @@ nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
   min-width: 100%;
   object-fit: cover;
 }
-#restaurants-list li h1 {
+#restaurants-list li h3 {
   color: #f18200;
   font-family: Arial,sans-serif;
   font-size: 1.3rem;

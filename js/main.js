@@ -179,7 +179,7 @@ createRestaurantHTML = (restaurant) => {
   image.alt = restaurant.img_alt;
   li.append(image);
 
-  const name = document.createElement('h1');
+  const name = document.createElement('h3');
   name.innerHTML = restaurant.name;
   name.id = `r-i-${restaurant.id}`;
   li.append(name);
